@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# **WAIFU WORLD**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue dans **Waifu World**, une application React où vous pouvez découvrir et admirer vos waifus préférées d'animés ! Cette galerie interactive permet de parcourir une collection de waifus, chacun accompagné de son image, de son anime d'origine et de sa note.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Table des matières**
 
-### `npm start`
+1. [Prérequis](#prérequis)
+2. [Installation](#installation)
+3. [Structure du projet](#structure-du-projet)
+4. [Technologies utilisées](#technologies-utilisées)
+5. [Fonctionnalités](#fonctionnalités)
+6. [Captures d'écran](#captures-décran)
+7. [Contribuer](#contribuer)
+8. [Notes supplémentaires](#notes-supplémentaires)
+9. [Licence](#licence)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Prérequis**
 
-### `npm test`
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur votre machine :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (version 14 ou supérieure) - [Téléchargez-le ici](https://nodejs.org/).
+- **npm** (le gestionnaire de paquets de Node.js) - npm est généralement installé automatiquement avec Node.js.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Installation**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. **Clonez le projet**  
+Commencez par cloner ce dépôt sur votre machine locale :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/le-pseudo/waifu-world.git
+```
 
-### `npm run eject`
+## Structure Du Projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+waifu-world/
+├── public/
+│   ├── index.html             
+│   ├── assets/
+│   │   └── waifus/              
+├── src/
+│   ├── components/
+│   │   ├── WaifuCard.jsx        
+│   │   ├── WaifuList.jsx        
+│   ├── App.jsx                  
+│   ├── index.js                 
+│   ├── App.css                  
+├── package.json                 
+├── README.md                    
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Technologies utilisées**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ce projet utilise les technologies suivantes :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React** : Bibliothèque JavaScript pour construire des interfaces utilisateur interactives.
+- **CSS** : Pour la mise en forme et le design des composants.
+- **npm** : Gestionnaire de dépendances.
+- **React Router** (si vous ajoutez des pages supplémentaires à l'avenir).
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Fonctionnalités**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Affichage de waifus** : Chaque waifu est affichée sous forme de carte, avec son image, son nom, son anime d'origine et une note sur 10.
+- **Design interactif** : Les cartes des waifus réagissent au survol (agrandissement et effets visuels) pour une meilleure expérience utilisateur.
+- **Images dynamiques** : Les images des waifus sont chargées dynamiquement depuis le dossier `public/assets/waifus`.
+- **Responsive** : Le design est adapté pour tous types de dispositifs, que ce soit desktop, tablette ou mobile.
 
-### Code Splitting
+## **Captures d'écran**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Voici à quoi ressemble l'application :
 
-### Analyzing the Bundle Size
+![Waifu World](./public/assets/screenshots/WaifuWorld.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
